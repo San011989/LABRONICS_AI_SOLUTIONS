@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Labronics AI Solutions</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "surface-dark": "#182430",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for horizontal scrolls */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        /* Glassmorphism utility */
+        .glass-nav {
+            background: rgba(16, 25, 34, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white antialiased selection:bg-primary selection:text-white">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto shadow-2xl">
+<!-- Sticky Top Navigation -->
+<div class="sticky top-0 z-50 glass-nav px-4 py-3 flex items-center justify-between">
+<button class="text-white flex size-10 shrink-0 items-center justify-center rounded-full active:bg-white/10 transition-colors">
+<span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+</button>
+<div class="flex items-center gap-2">
+<!-- Simple Logo Icon -->
+<div class="size-8 rounded-lg bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-white" style="font-size: 20px;">science</span>
+</div>
+<h1 class="text-white text-lg font-bold tracking-tight">Labronics</h1>
+</div>
+<button class="text-primary flex size-10 shrink-0 items-center justify-center rounded-full bg-primary/10 active:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined" style="font-size: 24px;">call</span>
+</button>
+</div>
+<!-- Main Content -->
+<main class="flex-1 pb-24">
+<!-- Hero Section -->
+<div class="@container px-4 pt-4 pb-2">
+<div class="relative flex min-h-[420px] flex-col gap-6 overflow-hidden rounded-xl bg-cover bg-center p-6 shadow-lg group" data-alt="Students working on robotics project with glowing blue futuristic overlay" style='background-image: linear-gradient(180deg, rgba(16, 25, 34, 0.2) 0%, rgba(16, 25, 34, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuARj5nP8RQSbKLBQw7qEFpg3Z3MEgxOT1imqW7xxXz_mQm64K7OzwvKS-EW0x_-eNsOAkUChEQ_cecKULG2whDSHC1YNlkiK_oo-j0uAaIxF7XiSFzZ_fhyYETmxr6TK9LJoCCbizynleDDNbkMMJy28j9F8NUuGXop-tM_f6w8s6tcBRKkG0AULLr4QE1mqtS7R2t6tJcQNs2awSMYPXWAwI6XtTeBUjvABaQQNQFPooPFfxYotfSTXIhAUbXAixrqdKmxEg5NSPU0");'>
+<div class="mt-auto flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 rounded-full bg-primary/20 border border-primary/30 px-3 py-1 backdrop-blur-sm w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="text-xs font-semibold text-primary uppercase tracking-wider">ATL Certified Partner</span>
+</div>
+<h2 class="text-white text-4xl font-black leading-[1.1] tracking-tight">
+                            Future-Ready <br/>
+<span class="text-primary">AI Labs</span> for <br/>
+                            Schools
+                        </h2>
+<p class="text-gray-300 text-sm font-medium leading-relaxed max-w-[90%]">
+                            Transform your campus with end-to-end Atal Tinkering Lab solutions. Hardware, curriculum, and expert staff included.
+                        </p>
+<div class="flex gap-3 mt-2">
+<button class="flex-1 h-12 bg-primary hover:bg-blue-600 active:bg-blue-700 text-white text-sm font-bold rounded-lg transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary/25">
+                                Explore Solutions
+                                <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="size-12 flex items-center justify-center rounded-lg bg-white/10 backdrop-blur-md border border-white/10 text-white active:bg-white/20 transition-all">
+<span class="material-symbols-outlined">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Stats Bar -->
+<div class="flex items-center justify-between px-6 py-6 border-b border-white/5">
+<div class="text-center">
+<p class="text-2xl font-bold text-white">50+</p>
+<p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold">Schools</p>
+</div>
+<div class="h-8 w-px bg-white/10"></div>
+<div class="text-center">
+<p class="text-2xl font-bold text-white">20k+</p>
+<p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold">Students</p>
+</div>
+<div class="h-8 w-px bg-white/10"></div>
+<div class="text-center">
+<p class="text-2xl font-bold text-white">100%</p>
+<p class="text-[10px] uppercase tracking-wider text-gray-400 font-semibold">Certified</p>
+</div>
+</div>
+<!-- Our Mission Section -->
+<div class="px-4 pt-8 pb-4">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-white text-xl font-bold tracking-tight">Our Mission</h3>
+<span class="text-xs font-medium text-primary cursor-pointer">About Us</span>
+</div>
+<div class="relative overflow-hidden rounded-xl bg-surface-dark border border-white/5 p-5">
+<div class="absolute top-0 right-0 -mt-4 -mr-4 size-24 rounded-full bg-primary/10 blur-2xl"></div>
+<div class="relative z-10">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl">rocket_launch</span>
+<p class="text-xl font-bold text-white mb-2">Empowering Innovation</p>
+<p class="text-gray-400 text-sm leading-relaxed">
+                            We bridge the gap between theoretical knowledge and practical application. Our mission is to equip the next generation with cutting-edge AI skills and hands-on robotics experience through world-class labs.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Core Offerings Carousel -->
+<div class="pt-6 pb-4">
+<div class="px-4 mb-4 flex items-center justify-between">
+<h3 class="text-white text-xl font-bold tracking-tight">Core Offerings</h3>
+<div class="flex gap-2">
+<button class="size-8 flex items-center justify-center rounded-full bg-surface-dark border border-white/10 text-gray-400">
+<span class="material-symbols-outlined text-sm">chevron_left</span>
+</button>
+<button class="size-8 flex items-center justify-center rounded-full bg-primary text-white">
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto gap-4 px-4 pb-4 hide-scrollbar snap-x snap-mandatory">
+<!-- Card 1: Lab Infrastructure -->
+<div class="min-w-[280px] snap-center rounded-xl bg-surface-dark border border-white/5 overflow-hidden flex flex-col group">
+<div class="h-40 bg-cover bg-center relative" data-alt="Modern computer lab setup with electronics kits on tables" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyykShvYkZb6NlG6lKQKJ_cgZR3I43rPiKesgZCT45J3_fAIMjc3jatZrVviKnJkVFufnXIohf1gP_blNjJFIsp0IDgPc__QmoZvXLUy6MLnBaHR_opSVzNUqLs-bFALE1T2tpz2kpMxNtZKI-zbLsaDMI9E1lc3ZJhZGNhwPfSMOYhSSKtqdiWSCCUAolZ_34-2mQxGeXI6Ea5EwBxfFllhgwRKOa01Hr2-3JIWEHbzRGjrpJxOEKfB-i9fA7lw77iZ0iQzd4uFBU");'>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark to-transparent"></div>
+</div>
+<div class="p-5 flex-1 flex flex-col">
+<div class="mb-2 size-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<h4 class="text-white font-bold text-lg mb-1">Lab Infrastructure</h4>
+<p class="text-gray-400 text-xs mb-4 flex-1">State-of-the-art robotics kits, 3D printers, and IoT sensors tailored for school environments.</p>
+<a class="text-primary text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                                Learn more <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 2: AI Staffing -->
+<div class="min-w-[280px] snap-center rounded-xl bg-surface-dark border border-white/5 overflow-hidden flex flex-col group">
+<div class="h-40 bg-cover bg-center relative" data-alt="Professional teacher helping student with a robot" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBF9dNRSPVUOZ-UrD99-YzS39VOiaCpKzf9KwQ9XGgw5mwX4lGpWI1dQYeECanPC2VMBR3w39VKCR-PbeXnRUCo-0jk_o6Y6k3G_C3aLm7qpCeKdBVMKoFL8TRiN_BI1CGFhC4SVvMk5JTENkkeA9WBODYv-_X5RuwDgtzfKFak1lc4H31ac8OS9Y_PUjuO0jCGUazgS6W6R2h9itVPKqVix04TigZor0ri-bW_0sTu4hcLwhT7sWx9lIgMsQUU8TCJfLzGe0SEA7EJ");'>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark to-transparent"></div>
+</div>
+<div class="p-5 flex-1 flex flex-col">
+<div class="mb-2 size-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400">
+<span class="material-symbols-outlined">school</span>
+</div>
+<h4 class="text-white font-bold text-lg mb-1">Expert AI Staff</h4>
+<p class="text-gray-400 text-xs mb-4 flex-1">We don't just provide equipment. We deploy certified AI educators to run the labs daily.</p>
+<a class="text-purple-400 text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                                View Profiles <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Card 3: Curriculum -->
+<div class="min-w-[280px] snap-center rounded-xl bg-surface-dark border border-white/5 overflow-hidden flex flex-col group">
+<div class="h-40 bg-cover bg-center relative" data-alt="Digital curriculum on tablet showing code blocks" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBwUI3qmSdQcmqqGt_T2HFJllCEkUtcFvqKVYw-TpD73WbUa5zEKnfo8-1Dfvogv8EWww2vPER2zIVqm8gYTlz3lJzW5oEHMAWMAd_d11vqe1yEJsFshcC1EyAygMUa__-zIzWSQyhX9mW5XKITDuy3Lw8fA4xXqDvL1NcZz627bT1Jv8gF-kZL65ovaMlPQcOz0tpZjup-BWeF0SwHfruR1y47aLdeOH1Xu2QzWUbFOZAcz3-K63CjZ48CtzJc5nujW-PwOtgC8FcP");'>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-dark to-transparent"></div>
+</div>
+<div class="p-5 flex-1 flex flex-col">
+<div class="mb-2 size-10 rounded-lg bg-green-500/10 flex items-center justify-center text-green-400">
+<span class="material-symbols-outlined">menu_book</span>
+</div>
+<h4 class="text-white font-bold text-lg mb-1">Smart Curriculum</h4>
+<p class="text-gray-400 text-xs mb-4 flex-1">CBSE/ICSE aligned modules covering Python, AI, ML, and ethical computing.</p>
+<a class="text-green-400 text-sm font-bold flex items-center gap-1 group-hover:gap-2 transition-all" href="#">
+                                See Syllabus <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Expert Staff Highlight -->
+<div class="px-4 py-6">
+<div class="bg-gradient-to-br from-primary to-blue-700 rounded-xl p-6 relative overflow-hidden text-white shadow-lg">
+<!-- Decor -->
+<div class="absolute top-0 right-0 size-32 bg-white/10 rounded-full blur-2xl -mr-10 -mt-10"></div>
+<div class="relative z-10 flex flex-col gap-4">
+<div class="flex items-start justify-between">
+<div>
+<h3 class="text-xl font-bold mb-1">Need Trained Staff?</h3>
+<p class="text-blue-100 text-sm">Our "Staff-as-a-Service" model ensures your lab is never idle.</p>
+</div>
+<div class="bg-white/20 p-2 rounded-lg">
+<span class="material-symbols-outlined text-2xl">person_check</span>
+</div>
+</div>
+<!-- Mini Profile Card -->
+<div class="bg-white/10 backdrop-blur-sm rounded-lg p-3 flex items-center gap-3 border border-white/10 mt-2">
+<div class="size-10 rounded-full bg-gray-300 bg-cover bg-center" data-alt="Headshot of a smiling young teacher" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKDGSvncKn5AJLpYWfU_oyWvKHVj7yHvIsiyEHbf5rsSkyk_yPBkvNj0FJ6RfrHyqPdDvdcuT14-fnlGqlB0n_l4bFrDVkFWSkHkVq8b7DOPZNrQTfgohcNjTszw0FrhdvO9YaUbFri5UU4NXmz6d8grH_Q2E-etBQDJ9JP2zKUfA8q63v0tDac1VpwRFBaz83l86FZijrb1hbUlXg1x5k0gfZ5HXb1Vx2IyjsS3hqQNanjnWjlDX3FvZejXZDtuvfdnxupOy0l8lM");'></div>
+<div>
+<p class="text-sm font-bold">Priya Sharma</p>
+<p class="text-[10px] text-blue-100 uppercase tracking-wide">AI Certified • 5 Yrs Exp</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Section -->
+<div class="px-4 pb-8">
+<h3 class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-4 text-center">Trusted By Top Institutions</h3>
+<div class="grid grid-cols-4 gap-4 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+<!-- Placeholder logos represented by icons for demo purposes -->
+<div class="h-12 bg-white/5 rounded flex items-center justify-center">
+<span class="material-symbols-outlined">school</span>
+</div>
+<div class="h-12 bg-white/5 rounded flex items-center justify-center">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<div class="h-12 bg-white/5 rounded flex items-center justify-center">
+<span class="material-symbols-outlined">history_edu</span>
+</div>
+<div class="h-12 bg-white/5 rounded flex items-center justify-center">
+<span class="material-symbols-outlined">science</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating Sticky Bottom Bar for CTA -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-background-dark/90 backdrop-blur-md border-t border-white/5 z-40 max-w-md mx-auto">
+<button class="w-full h-12 bg-primary hover:bg-blue-600 text-white font-bold rounded-lg shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-colors">
+<span class="material-symbols-outlined">calendar_month</span>
+                Book a Free Consultation
+            </button>
+</div>
+</div>
+</body></html>

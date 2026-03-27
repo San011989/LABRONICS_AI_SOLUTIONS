@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Success Stories - Labronics AI</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0b5ec2",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f1115",
+                        "surface-dark": "#181b21",
+                        "surface-light": "#f3f5f8",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+                    container: {
+                        center: true,
+                        padding: '1.5rem',
+                        screens: {
+                            sm: '640px',
+                            md: '768px',
+                            lg: '1024px',
+                            xl: '1280px',
+                            '2xl': '1400px',
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(15, 17, 21, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-body text-slate-900 dark:text-gray-100 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Desktop Navigation -->
+    <nav class="fixed top-0 inset-x-0 z-50 glass-nav transition-all duration-300">
+        <div class="container mx-auto h-20 flex items-center justify-between">
+                                    <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="size-10 md:size-12 rounded-full bg-[#f3f5f8] dark:bg-white flex items-center justify-center overflow-hidden shadow-lg group-hover:scale-105 transition-transform">
+                    <img src="static/logo.jpeg" alt="Labronics AI Solutions Logo" class="w-full h-full object-contain rounded-full" />
+                </div>
+                <span class="text-xl md:text-2xl font-display font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">Labronics AI Solutions</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Home</a>
+                <a href="about.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">About</a>
+                <a href="services.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Services</a>
+                <a href="portfolio.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Portfolio</a>
+                <a href="careers.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Careers</a>
+                <a href="testimonials.html"
+                    class="text-sm font-medium text-slate-900 dark:text-white hover:text-primary transition-colors">Testimonials</a>
+            </div>
+
+            <!-- CTA & Mobile Menu Button -->
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden md:flex h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold rounded-full items-center justify-center transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 active:scale-95">
+                    Contact Us
+                </a>
+                <button
+                    class="md:hidden size-10 flex items-center justify-center rounded-full text-slate-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Header -->
+        <header class="bg-surface-light dark:bg-surface-dark py-20 border-b border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4 text-center max-w-4xl">
+                <span class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Client
+                    Testimonials</span>
+                <h1
+                    class="text-4xl md:text-6xl font-display font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+                    Trusted by <span class="text-primary">50+ Schools</span>
+                </h1>
+                <p class="text-xl text-slate-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto">
+                    Discover how Labronics AI is empowering the next generation of innovators through our end-to-end AI
+                    & Robotics curriculum.
+                </p>
+            </div>
+        </header>
+
+        <!-- Testimonials Grid -->
+        <section class="py-24">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Review 1 -->
+                <div
+                    class="bg-white dark:bg-surface-dark p-8 rounded-3xl border border-gray-100 dark:border-white/5 shadow-lg flex flex-col gap-6">
+                    <div class="flex gap-1 text-yellow-400 mb-2">
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                    </div>
+                    <p class="text-slate-600 dark:text-gray-300 text-lg leading-relaxed italic flex-1">
+                        "Labronics provided not just equipment, but the AI curriculum that changed how our students
+                        learn. The practical approach is exactly what we needed."
+                    </p>
+                    <div class="flex items-center gap-4 mt-auto border-t border-gray-100 dark:border-white/5 pt-6">
+                        <div class="size-12 rounded-full bg-cover bg-center border-2 border-primary/20"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUkOpkpDb1GdTpR98R-EfDAX7u1xM7o0FrhjDZqTzThOWhCrwCK9Qmao9dec82Ld0WRuffmbM3-8YBhO20oWZ01Nfy9uzhHYHROuayMMnGk4jQwzVRYWOMK-t84mtXzWFq3RGl_LlguhTgQMuSjuaR_-CDDqdPIlWhGd5w4qAehwI0X9MaY_q9n6XiKDHsC9fEJMaO0b2azgcig6ceIDCoJeJELcphOEacbJYiuwF5QMylXC3Nrqkst1fHGaXQfiJZEqdswGWnqHAA");'>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Mrs. Sharma</h4>
+                            <p class="text-xs text-primary font-bold uppercase">Principal, St. Mary's</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div
+                    class="bg-white dark:bg-surface-dark p-8 rounded-3xl border border-gray-100 dark:border-white/5 shadow-lg flex flex-col gap-6">
+                    <div class="flex gap-1 text-yellow-400 mb-2">
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                    </div>
+                    <p class="text-slate-600 dark:text-gray-300 text-lg leading-relaxed italic flex-1">
+                        "The AI trainer provided by Labronics is exceptional. The students are engaged and building real
+                        robots from day one. Great end-to-end support."
+                    </p>
+                    <div class="flex items-center gap-4 mt-auto border-t border-gray-100 dark:border-white/5 pt-6">
+                        <div class="size-12 rounded-full bg-cover bg-center border-2 border-primary/20"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA5e8EPc7r4_y5LzhfSdIV4lRG1_-OfGgdU8u8vDmpghgLeBQees0R2npGO81I5pJG5fX9PjErcrEZIW1Lsgs_XxyoadHGB9MrdQO7Ci48GH3PzlZE0TPQuZlIh418_6xtqjBpPF4GD0wqMmg-5mX1j4iKomXofEReczBJQGE2Y9OVX8SakZwb1zuMJee4omvzjNWlSBy2uJ8t0dHH6fjVqwJui6yhzhZcPnAYoVJqALl3JW8BhhZ0Zr4TVtLZosBRxZoxE2I4hAjcK");'>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Mr. Rajesh Kumar</h4>
+                            <p class="text-xs text-primary font-bold uppercase">HOD Science, DPS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div
+                    class="bg-white dark:bg-surface-dark p-8 rounded-3xl border border-gray-100 dark:border-white/5 shadow-lg flex flex-col gap-6">
+                    <div class="flex gap-1 text-yellow-400 mb-2">
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star</span>
+                        <span class="material-symbols-outlined fill-current text-xl">star_half</span>
+                    </div>
+                    <p class="text-slate-600 dark:text-gray-300 text-lg leading-relaxed italic flex-1">
+                        "End-to-end setup was seamless. The documentation provided for the NITI Aayog grant was perfect.
+                        Highly recommended for any school looking for ATL compliant labs."
+                    </p>
+                    <div class="flex items-center gap-4 mt-auto border-t border-gray-100 dark:border-white/5 pt-6">
+                        <div class="size-12 rounded-full bg-cover bg-center border-2 border-primary/20"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkldwyzoyQMTi7R6xgCOHkyQeqe28-RZjsF3TmPAT6ErF9A4Hoq9xc4FPn7V3pim-WPspT6dThiAXAInR8uk8-BUV6NvkYuMyqT_QzmTv_qaUgqS24n64Aaxwgbowt1CoXeU3fEXZB67RoCJfv3ixRfTKdy31doZcO47Ht0kJOwyomlS19JsoLxGE_1ImFw68dsMClQa_iM_w99X7vW1R5fNc75fgMkdzm6eFtIvkNN5BdhJKVJKqSm2gpfyP2aMc_1vFcpuxD51vFcpuxD51vF");'>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 dark:text-white">Dr. Anjali Gupta</h4>
+                            <p class="text-xs text-primary font-bold uppercase">Trustee, Greenfield</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video CTA -->
+        <section class="py-24 bg-background-light dark:bg-background-dark">
+            <div class="container mx-auto px-4">
+                <div class="relative w-full h-[500px] rounded-3xl overflow-hidden group cursor-pointer shadow-2xl">
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDwaJTZWdtDI7qCSqzOx7Ad_rkPO3rdL8KdllqFxBXrn2WVxACBQ1Mr3j6SXUnhjbXyRk0ymGuqVZcW3i8lmypLaEFzxNZ-lgAlNWku2UGzODmWltNBVnXTF5zR1Zl5i75TksLb2rKYhf59pZsgvcJyrHWdJo3DXqIIY5XfyUdIyJAnYXNYx8vXKQMVH7Zfl9k8ARQtgQMaB09dXOE428zs6o_DaOYDrv3qWh8h6l_caQCedSJ04CeB_HolPcksd-wJ7kN7sayCrD_W");'>
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors flex flex-col items-center justify-center">
+                        <div
+                            class="size-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/40 mb-6 group-hover:scale-110 transition-transform shadow-xl">
+                            <span class="material-symbols-outlined text-white text-5xl fill-current">play_arrow</span>
+                        </div>
+                        <h2 class="text-4xl font-bold text-white mb-2">Watch Their Stories</h2>
+                        <p class="text-xl text-white/90">See how we transform learning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-surface-dark py-12 border-t border-white/5">
+        <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+            &copy; 2026 Labronics AI Solutions. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

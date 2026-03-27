@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Careers - Labronics AI</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0b5ec2",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f1115",
+                        "surface-dark": "#181b21",
+                        "surface-light": "#f3f5f8",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+                    container: {
+                        center: true,
+                        padding: '1.5rem',
+                        screens: {
+                            sm: '640px',
+                            md: '768px',
+                            lg: '1024px',
+                            xl: '1280px',
+                            '2xl': '1400px',
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(15, 17, 21, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-body text-slate-900 dark:text-gray-100 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Desktop Navigation -->
+    <nav class="fixed top-0 inset-x-0 z-50 glass-nav transition-all duration-300">
+        <div class="container mx-auto h-20 flex items-center justify-between">
+                        <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="size-10 md:size-12 rounded-full bg-[#f3f5f8] dark:bg-white flex items-center justify-center overflow-hidden shadow-lg group-hover:scale-105 transition-transform">
+                    <img src="static/logo.jpeg" alt="Labronics AI Solutions Logo" class="w-full h-full object-contain rounded-full" />
+                </div>
+                <span class="text-xl md:text-2xl font-display font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">Labronics AI Solutions</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Home</a>
+                <a href="about.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">About</a>
+                <a href="services.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Services</a>
+                <a href="portfolio.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Portfolio</a>
+                <a href="careers.html"
+                    class="text-sm font-medium text-slate-900 dark:text-white hover:text-primary transition-colors border-b-2 border-primary pb-1">Careers</a>
+                <a href="testimonials.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Testimonials</a>
+            </div>
+
+            <!-- CTA & Mobile Menu Button -->
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden md:flex h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold rounded-full items-center justify-center transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 active:scale-95">
+                    Contact Us
+                </a>
+                <button
+                    class="md:hidden size-10 flex items-center justify-center rounded-full text-slate-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Hero Header -->
+        <header
+            class="relative bg-surface-light dark:bg-surface-dark py-24 border-b border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4 text-center max-w-4xl">
+                <span
+                    class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-sm tracking-wide uppercase mb-6">We're
+                    Hiring</span>
+                <h1
+                    class="text-5xl md:text-6xl font-display font-bold text-slate-900 dark:text-white mb-6 leading-tight">
+                    Shape the Future of <br /><span class="text-primary">AI Education</span></h1>
+                <p class="text-xl text-slate-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto">
+                    Join a team of passionate innovators dedicated to empowering schools with next-gen Atal Tinkering
+                    Labs.
+                </p>
+            </div>
+        </header>
+
+        <!-- Content Grid -->
+        <section class="py-24 bg-background-light dark:bg-background-dark">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col lg:flex-row gap-16">
+                    <!-- Left: Culture Carousel -->
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8">Life at Labronics</h2>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="h-64 rounded-3xl bg-cover bg-center hover:scale-[1.02] transition-transform duration-500"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBj0iu9h96GJMLVMRiSuZVXdoLIaBbfIhS0kz7e75Vdb5surcC5_vKdAqUwBoVIQPxB1C9L1wpCczLNPUqYE6akzGbjuqILHCk5_QgWnlxGb4PcB3mrI-8N8ZHjpfoRxbS8zD7G5KadRRRpfvUq_R-3gX2-MFTmmiIWbrTiIdTMXoeSLosjOC4SjVC9kp7idv3JMMtyw7im3gIHGFmlUd2fPHmgj3PA605pfPqKoH9skuhmsCB1z71c7XoFnUHclLd6XfdE9eeiMUfm");'>
+                                <div class="w-full h-full bg-black/30 flex items-end p-6 rounded-3xl">
+                                    <span class="text-white font-bold">Innovation Workshops</span>
+                                </div>
+                            </div>
+                            <div class="h-64 rounded-3xl bg-cover bg-center hover:scale-[1.02] transition-transform duration-500 mt-8"
+                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvkg2fVVhD5aopvrNBEPnK0t-p1y35do7vChu5M-2OP1y9M6LZ-fZDRoXepfNLczwp-yT1qEK66at0hL1kBVdESBY4Sb7q3RGYtuEtb5D7ytqORJsvnUuHKKW5yvTRKTDqTNaUT-12-2Li8CynVVaqo54Pf2yQabSb-ESYeL6XmOvbVeELDGYTsRVPctkGa5HeOVo_0dYwWF8rI79D7jSjXpvayv5nJclvAbH2xbM3LBVXtiHurmkcwa7BonSAz3GtMXzgTv5WKhd9");'>
+                                <div class="w-full h-full bg-black/30 flex items-end p-6 rounded-3xl">
+                                    <span class="text-white font-bold">Team Bonding</span>
+                                </div>
+                            </div>
+                            <div class="h-64 rounded-3xl bg-cover bg-center hover:scale-[1.02] transition-transform duration-500"
+                                style='background-image: url("static/img2.jpeg");'>
+                                <div class="w-full h-full bg-black/30 flex items-end p-6 rounded-3xl">
+                                    <span class="text-white font-bold">Share Your Resume</span>
+                                </div>
+                            </div>
+                            <div class="h-64 rounded-3xl bg-cover bg-center hover:scale-[1.02] transition-transform duration-500 mt-8"
+                                style='background-image: url("static/img1.jpeg");'>
+                                <div class="w-full h-full bg-black/30 flex items-end p-6 rounded-3xl">
+                                    <span class="text-white font-bold">Share Your Strategic Expertise</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Open Positions -->
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-8">Open Positions</h2>
+                        <div class="flex flex-col gap-4">
+                            <!-- Job 1 -->
+                            <div
+                                class="group p-6 rounded-2xl bg-surface-light dark:bg-surface-dark border border-gray-100 dark:border-white/5 hover:border-primary/30 transition-all cursor-pointer">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3
+                                        class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                                        AI Trainer / Mentor</h3>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-green-500/10 text-green-500 text-xs font-bold uppercase">Full-Time</span>
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 mb-4 text-sm">Train students on robotics and
+                                    AI curriculum at partner schools.</p>
+                                <div
+                                    class="flex items-center gap-4 text-xs text-slate-500 font-bold uppercase tracking-wider">
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-sm">location_on</span> On-Site</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-sm">schedule</span> Immediate</span>
+                                </div>
+                            </div>
+
+                            <!-- Job 2 -->
+                            <div
+                                class="group p-6 rounded-2xl bg-surface-light dark:bg-surface-dark border border-gray-100 dark:border-white/5 hover:border-primary/30 transition-all cursor-pointer">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3
+                                        class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                                        Robotics Engineer</h3>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-green-500/10 text-green-500 text-xs font-bold uppercase">Full-Time</span>
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 mb-4 text-sm">Design and maintain robotic
+                                    kits/hardware for labs.</p>
+                                <div
+                                    class="flex items-center gap-4 text-xs text-slate-500 font-bold uppercase tracking-wider">
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-sm">location_on</span>
+                                        Ranchi, Patna</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-sm">schedule</span> Flexible</span>
+                                </div>
+                            </div>
+
+                            <!-- Job 3 -->
+                            <div
+                                class="group p-6 rounded-2xl bg-surface-light dark:bg-surface-dark border border-gray-100 dark:border-white/5 hover:border-primary/30 transition-all cursor-pointer">
+                                <div class="flex items-center justify-between mb-2">
+                                    <h3
+                                        class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-primary transition-colors">
+                                        Sales Executive</h3>
+                                    <span
+                                        class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-500 text-xs font-bold uppercase">Part-Time</span>
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 mb-4 text-sm">Partner with schools to expand
+                                    our ATL network.</p>
+                                <div
+                                    class="flex items-center gap-4 text-xs text-slate-500 font-bold uppercase tracking-wider">
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-sm">location_on</span> Remote</span>
+                                    <span class="flex items-center gap-1"><span
+                                            class="material-symbols-outlined text-sm">schedule</span> Flexible</span>
+                                </div>
+                            </div>
+                        <!-- Resume Submission CTA -->
+                        <div class="mt-12 p-8 rounded-3xl bg-primary/5 border border-primary/10 relative overflow-hidden group">
+                            <div class="absolute top-0 right-0 size-32 bg-primary/10 rounded-full -mr-16 -mt-16 blur-2xl group-hover:bg-primary/20 transition-colors"></div>
+                            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-4">Interested in joining our team?</h3>
+                            <p class="text-slate-600 dark:text-gray-400 leading-relaxed text-sm mb-6">
+                                Please send your updated resume to <span class="font-bold text-primary">Email ID - labronicsaisolutions@gmail.com</span> to be considered for our latest opportunities.
+                            </p>
+                            <a href="mailto:labronicsaisolutions@gmail.com" class="inline-flex h-12 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold rounded-xl items-center justify-center transition-all shadow-lg shadow-primary/20 active:scale-95">
+                                Send Resume <span class="material-symbols-outlined ml-2 text-lg">send</span>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Grid -->
+        <section class="py-24 bg-surface-light dark:bg-surface-dark">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-slate-900 dark:text-white">Why Join Us?</h2>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Benefit 1 -->
+                    <div class="p-6 rounded-2xl bg-background-light dark:bg-background-dark text-center">
+                        <div
+                            class="size-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-2xl">school</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-2">AI Training</h3>
+                        <p class="text-sm text-slate-500">Free certification</p>
+                    </div>
+                    <!-- Benefit 2 -->
+                    <div class="p-6 rounded-2xl bg-background-light dark:bg-background-dark text-center">
+                        <div
+                            class="size-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-2xl">payments</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-2">Great Pay</h3>
+                        <p class="text-sm text-slate-500">Above market rates</p>
+                    </div>
+                    <!-- Benefit 3 -->
+                    <div class="p-6 rounded-2xl bg-background-light dark:bg-background-dark text-center">
+                        <div
+                            class="size-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-2">Impact</h3>
+                        <p class="text-sm text-slate-500">Shape young minds</p>
+                    </div>
+                    <!-- Benefit 4 -->
+                    <div class="p-6 rounded-2xl bg-background-light dark:bg-background-dark text-center">
+                        <div
+                            class="size-14 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-4">
+                            <span class="material-symbols-outlined text-2xl">health_and_safety</span>
+                        </div>
+                        <h3 class="font-bold text-slate-900 dark:text-white mb-2">Health</h3>
+                        <p class="text-sm text-slate-500">Full insurance</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-surface-dark py-12 border-t border-white/5">
+        <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+            &copy; 2026 Labronics AI Solutions. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+
+</html>

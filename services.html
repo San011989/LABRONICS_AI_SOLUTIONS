@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Our Services - Labronics AI</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Material Symbols -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Theme Configuration -->
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "primary-dark": "#0b5ec2",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f1115",
+                        "surface-dark": "#181b21",
+                        "surface-light": "#f3f5f8",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px" },
+                    container: {
+                        center: true,
+                        padding: '1.5rem',
+                        screens: {
+                            sm: '640px',
+                            md: '768px',
+                            lg: '1024px',
+                            xl: '1280px',
+                            '2xl': '1400px',
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(15, 17, 21, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-body text-slate-900 dark:text-gray-100 antialiased selection:bg-primary selection:text-white">
+
+    <!-- Desktop Navigation -->
+    <nav class="fixed top-0 inset-x-0 z-50 glass-nav transition-all duration-300">
+        <div class="container mx-auto h-20 flex items-center justify-between">
+                        <!-- Logo -->
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="size-10 md:size-12 rounded-full bg-[#f3f5f8] dark:bg-white flex items-center justify-center overflow-hidden shadow-lg group-hover:scale-105 transition-transform">
+                    <img src="static/logo.jpeg" alt="Labronics AI Solutions Logo" class="w-full h-full object-contain rounded-full" />
+                </div>
+                <span class="text-xl md:text-2xl font-display font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-primary transition-colors">Labronics AI Solutions</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8">
+                <a href="index.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Home</a>
+                <a href="about.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">About</a>
+                <a href="services.html"
+                    class="text-sm font-medium text-slate-900 dark:text-white hover:text-primary transition-colors border-b-2 border-primary pb-1">Services</a>
+                <a href="portfolio.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Portfolio</a>
+                <a href="careers.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Careers</a>
+                <a href="testimonials.html"
+                    class="text-sm font-medium text-slate-500 dark:text-gray-400 hover:text-primary transition-colors">Testimonials</a>
+            </div>
+
+            <!-- CTA & Mobile Menu Button -->
+            <div class="flex items-center gap-4">
+                <a href="contact.html"
+                    class="hidden md:flex h-10 px-6 bg-primary hover:bg-primary-dark text-white text-sm font-bold rounded-full items-center justify-center transition-all shadow-lg shadow-primary/25 hover:shadow-primary/40 active:scale-95">
+                    Contact Us
+                </a>
+                <button
+                    class="md:hidden size-10 flex items-center justify-center rounded-full text-slate-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Header -->
+        <section class="bg-surface-light dark:bg-surface-dark py-20 border-b border-gray-200 dark:border-gray-800">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-display font-bold text-slate-900 dark:text-white mb-6">End-to-End
+                    AI Solutions</h1>
+                <p class="text-xl text-slate-600 dark:text-gray-400 max-w-3xl leading-relaxed">
+                    Labronics AI Solutions provides comprehensive support for setting up and managing Atal Tinkering
+                    Labs, from infrastructure procurement to expert staffing.
+                </p>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-24">
+            <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+                                <!-- Service 1a: Basic ATL Lab Setup -->
+                <div
+                    class="group flex flex-col bg-white dark:bg-surface-dark rounded-3xl overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-64 bg-cover bg-center"
+                        style='background-image: url("static/Labsetup1.png");'>
+                        <div
+                            class="w-full h-full bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span
+                                class="px-3 py-1 bg-white text-slate-900 text-xs font-bold rounded-full uppercase tracking-wider">Basic Setup</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Basic ATL Lab Setup</h3>
+                            <span class="material-symbols-outlined text-primary text-3xl">science</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-6 flex-1">
+                            Essential infrastructure setup including core NITI Aayog approved equipment, basic robotics
+                            kits, and essential interior layouts for student engagement.
+                        </p>
+                        <button
+                            class="w-full h-12 rounded-xl bg-gray-50 dark:bg-white/5 hover:bg-primary/10 text-slate-900 dark:text-white font-bold transition-colors flex items-center justify-center gap-2 group-hover:text-primary">
+                            View Equipment List <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 1b: Classic Lab Setup -->
+                <div
+                    class="group flex flex-col bg-white dark:bg-surface-dark rounded-3xl overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-64 bg-cover bg-center"
+                        style='background-image: url("static/Labsetup2.png");'>
+                        <div
+                            class="w-full h-full bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span
+                                class="px-3 py-1 bg-white text-slate-900 text-xs font-bold rounded-full uppercase tracking-wider">Classic Setup</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Classic Lab Setup</h3>
+                            <span class="material-symbols-outlined text-primary text-3xl">precision_manufacturing</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-6 flex-1">
+                            Complete infrastructure setup including advanced NITI Aayog approved equipment, 3D printers, robotics
+                            kits, and futuristic interior design tailored for student engagement.
+                        </p>
+                        <button
+                            class="w-full h-12 rounded-xl bg-gray-50 dark:bg-white/5 hover:bg-primary/10 text-slate-900 dark:text-white font-bold transition-colors flex items-center justify-center gap-2 group-hover:text-primary">
+                            View Equipment List <span class="material-symbols-outlined">arrow_forward</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 2: Education -->
+                <div
+                    class="group flex flex-col bg-white dark:bg-surface-dark rounded-3xl overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-64 bg-cover bg-center"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFkLyXbCGnCa97AoerbHlGMxMjyjXYSZFWl5SZjjiFnNRoYNHQB_UjepugNE1qArXMN7VnIv9GFWfQw9rqNm0qg_kj03Hyb4VdZgvk2ncXyO-Bt7ArLyyo_uXXMWQjbI1V0l6_zmE0WzNfiMXwvzOWAr5flMlOgR7OioY633H1QKgzocv_g-f6ikucK-LA2rwVQiUY7b9UuacX9Yw0nODQGxkYNFvRDRjmxtZojCAx73-SJgaxioIVL4Ebw54iPRWlYK236lXdCL8Y");'>
+                        <div
+                            class="w-full h-full bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span
+                                class="px-3 py-1 bg-white text-slate-900 text-xs font-bold rounded-full uppercase tracking-wider">Education</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">AI Curriculum</h3>
+                            <span class="material-symbols-outlined text-primary text-3xl">school</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-6 flex-1">
+                            Customized syllabus design, hands-on coding modules in Python & Arduino, and grade-specific
+                            learning paths ensuring practical AI knowledge.
+                        </p>
+                        <button
+                            class="w-full h-12 rounded-xl bg-gray-50 dark:bg-white/5 hover:bg-primary/10 text-slate-900 dark:text-white font-bold transition-colors flex items-center justify-center gap-2 group-hover:text-primary">
+                            Explore Modules <span class="material-symbols-outlined">menu_book</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 3: Staffing -->
+                <div
+                    class="group flex flex-col bg-white dark:bg-surface-dark rounded-3xl overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-64 bg-cover bg-center"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCy9KTc6ahnHt6AZymOgxt3jE0dV9QT9sCVp2qrsMRxqVFpeYUt8Z_pr70LxCqVQrQNtjpOTUaZVYpwAV9LhL1zh4PxVLpIulZ5XlSEZ_8aVOzvFRrVYZoT4OsvlyX7x2FWA8kC6zkD42nT7_h9M_hIw6DjxsrMpLEhlJscLsbZOLJZhqut-bXbt70HHl47erLblxcaVV9E087ApoBvdGPa4Cjjsy5Q9Ln0OXnFbZIi26zmXa5IyHfRosoit6cY01hAu7TcVPnnyG-1");'>
+                        <div
+                            class="w-full h-full bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span
+                                class="px-3 py-1 bg-white text-slate-900 text-xs font-bold rounded-full uppercase tracking-wider">Staffing</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Trained AI Mentors</h3>
+                            <span class="material-symbols-outlined text-primary text-3xl">groups</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-6 flex-1">
+                            Deployment of specialized AI tutors, teacher training workshops, and ongoing on-site support
+                            to ensure your lab is fully utilized.
+                        </p>
+                        <button
+                            class="w-full h-12 rounded-xl bg-gray-50 dark:bg-white/5 hover:bg-primary/10 text-slate-900 dark:text-white font-bold transition-colors flex items-center justify-center gap-2 group-hover:text-primary">
+                            Staff Profiles <span class="material-symbols-outlined">person_search</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 4: Compliance -->
+                <div
+                    class="group flex flex-col bg-white dark:bg-surface-dark rounded-3xl overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-64 bg-cover bg-center"
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_IisZdN_5PIFQqxZVNQ60ez664hC8ReCDBpswiTz1gAx5TTKfjajtCXBLi49sSI5IeIxivVjXXiACL2mzlxNa3Z64Dbyw1f4WDiIlTW2xhilmrFOa7DWh8xh3CeKkzWWLbmK8jxVzk6O99_XWif7YAWTfXUbWBEXu-WAPt-o-QZrLJB53XvzngFNblPBdzILNWVSkq97DugKqMbk38n10xmevWpU1dPwkeu577QfG1yljposs60aV1mBpu7sK4nuCR0EQAiIYP2Tu");'>
+                        <div
+                            class="w-full h-full bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span
+                                class="px-3 py-1 bg-white text-slate-900 text-xs font-bold rounded-full uppercase tracking-wider">Compliance</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Compliance & Reporting</h3>
+                            <span class="material-symbols-outlined text-primary text-3xl">verified</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-6 flex-1">
+                            Full assistance with government documentation, grant utilization certificates, and mandatory
+                            monthly usage reporting.
+                        </p>
+                        <button
+                            class="w-full h-12 rounded-xl bg-gray-50 dark:bg-white/5 hover:bg-primary/10 text-slate-900 dark:text-white font-bold transition-colors flex items-center justify-center gap-2 group-hover:text-primary">
+                            Learn More <span class="material-symbols-outlined">open_in_new</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service 6: Digital Library Setup -->
+                <div
+                    class="group flex flex-col bg-white dark:bg-surface-dark rounded-3xl overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
+                    <div class="h-64 flex relative">
+                        <!-- Priority Image -->
+                        <div class="w-1/2 h-full bg-cover bg-center border-r-[1px] border-white/20"
+                            style='background-image: url("static/digilab3.png");'>
+                        </div>
+                        <!-- Secondary Images Stacked -->
+                        <div class="w-1/2 h-full flex flex-col border-l-[1px] border-white/20">
+                            <div class="w-full h-1/2 bg-cover bg-center border-b-[1px] border-white/20"
+                                style='background-image: url("static/digilab1.png");'>
+                            </div>
+                            <div class="w-full h-1/2 bg-cover bg-center border-t-[1px] border-white/20"
+                                style='background-image: url("static/digilab2.png");'>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute inset-0 w-full h-full bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity z-10">
+                            <span
+                                class="px-3 py-1 bg-white text-slate-900 text-xs font-bold rounded-full uppercase tracking-wider">Digital Library</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Digital Library Setup</h3>
+                            <span class="material-symbols-outlined text-primary text-3xl">local_library</span>
+                        </div>
+                        <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-6 flex-1">
+                            Complete implementation of modern digital libraries, offering curated e-resources, intuitive reading interfaces, and dynamic student portals tailored for academic excellence.
+                        </p>
+                        <button onclick="openDigiLabModal()"
+                            class="w-full h-12 rounded-xl bg-gray-50 dark:bg-white/5 hover:bg-primary/10 text-slate-900 dark:text-white font-bold transition-colors flex items-center justify-center gap-2 group-hover:text-primary">
+                            Explore Library <span class="material-symbols-outlined">menu_book</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="py-24 bg-background-light dark:bg-background-dark">
+            <div class="container mx-auto px-4">
+                <div
+                    class="rounded-3xl bg-gradient-to-br from-primary to-blue-700 p-12 text-center text-white relative overflow-hidden shadow-2xl">
+                    <div class="absolute -top-24 -right-24 size-64 bg-white/10 rounded-full blur-3xl"></div>
+                    <div class="relative z-10">
+                        <h2 class="text-4xl font-display font-bold mb-6">Ready to Transform Your School?</h2>
+                        <p class="text-blue-100 text-xl max-w-2xl mx-auto mb-8">Get a free consultation and customized
+                            roadmap for your fully funded ATL lab.</p>
+                        <a href="contact.html"
+                            class="inline-flex h-14 px-8 bg-white text-primary hover:bg-gray-100 text-lg font-bold rounded-full items-center justify-center transition-colors">
+                            Request Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-surface-dark py-12 border-t border-white/5">
+        <div class="container mx-auto px-4 text-center text-gray-500 text-sm">
+            &copy; 2026 Labronics AI Solutions. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Digital Library Modal -->
+    <div id="digilab-modal" class="fixed inset-0 z-[100] hidden items-center justify-center">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/60 backdrop-blur-sm" onclick="closeDigiLabModal()"></div>
+        <!-- Modal Content -->
+        <div class="bg-surface-light dark:bg-surface-dark w-full max-w-4xl rounded-3xl shadow-2xl relative z-10 max-h-[90vh] flex flex-col mx-4 border border-gray-100 dark:border-white/5 overflow-hidden">
+            <!-- Header -->
+            <div class="p-6 md:p-8 border-b border-gray-100 dark:border-white/5 flex justify-between items-center bg-surface-light dark:bg-surface-dark sticky top-0 z-20">
+                <h2 class="text-2xl md:text-3xl font-display font-bold text-slate-900 dark:text-white flex items-center gap-3">
+                    <span class="material-symbols-outlined text-primary text-3xl">local_library</span> Digital Library Setup
+                </h2>
+                <button onclick="closeDigiLabModal()" class="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors size-10 flex items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10">
+                    <span class="material-symbols-outlined">close</span>
+                </button>
+            </div>
+            
+            <!-- Body -->
+            <div class="p-6 md:p-8 overflow-y-auto w-full">
+                <div class="space-y-10">
+                    <!-- Section 1 -->
+                    <div class="bg-white dark:bg-black/20 p-6 md:p-8 rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="flex items-center justify-center size-10 rounded-full bg-primary/10 text-primary font-bold text-lg">1</span>
+                            <h3 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">School Level: Physics & Computer Science</h3>
+                        </div>
+                        <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-6">For school students, the focus is on foundational visualization. The library would provide the expensive equipment that individual schools might lack.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-2 font-bold text-slate-800 dark:text-gray-200">
+                                    <span class="material-symbols-outlined text-primary">science</span> Physics
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 leading-relaxed text-sm">Stations for optics (lasers, lenses), electromagnetism kits, and mechanics (friction tracks, pendulums).</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-2 font-bold text-slate-800 dark:text-gray-200">
+                                    <span class="material-symbols-outlined text-primary">code</span> Computer Science
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 leading-relaxed text-sm">Beyond just PCs, this would include "Physical Computing" stations using Micro:bits or Raspberry Pi to see how code affects the physical world.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2 -->
+                    <div class="bg-white dark:bg-black/20 p-6 md:p-8 rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="flex items-center justify-center size-10 rounded-full bg-primary/10 text-primary font-bold text-lg">2</span>
+                            <h3 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">ITI College: Vocational Mastery</h3>
+                        </div>
+                        <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-6">The ITI section focuses on skills-based proficiency and safety. For Electronics, Electrical, and Computer streams, the library acts as a workshop.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-2 font-bold text-slate-800 dark:text-gray-200">
+                                    <span class="material-symbols-outlined text-primary">electrical_services</span> Electrical
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 leading-relaxed text-sm">Wiring simulation boards, motor winding stations, and transformer testing benches.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-2 font-bold text-slate-800 dark:text-gray-200">
+                                    <span class="material-symbols-outlined text-primary">precision_manufacturing</span> Electronics
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 leading-relaxed text-sm">Soldering stations, PCB etching areas, and basic troubleshooting with multimeters.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-2 font-bold text-slate-800 dark:text-gray-200">
+                                    <span class="material-symbols-outlined text-primary">computer</span> Computer (COPA)
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 leading-relaxed text-sm">Network cabling (crimping tools), hardware assembly/disassembly, and OS installation labs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 3 -->
+                    <div class="bg-white dark:bg-black/20 p-6 md:p-8 rounded-2xl border border-gray-100 dark:border-white/5 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <span class="flex items-center justify-center size-10 rounded-full bg-primary/10 text-primary font-bold text-lg">3</span>
+                            <h3 class="text-xl md:text-2xl font-bold text-slate-900 dark:text-white">Engineering College: Innovation & Research</h3>
+                        </div>
+                        <p class="text-slate-600 dark:text-gray-400 leading-relaxed mb-6">At the engineering level, the library moves into high-complexity analysis and prototyping.</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-2 font-bold text-slate-800 dark:text-gray-200">
+                                    <span class="material-symbols-outlined text-primary">memory</span> Electronics & Electrical
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 leading-relaxed text-sm">Advanced Power Electronics labs, VLSI design tools, and high-end Oscilloscopes (DSOs). "Digital Twin" technology where students simulate power grids.</p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <div class="flex items-center gap-2 font-bold text-slate-800 dark:text-gray-200">
+                                    <span class="material-symbols-outlined text-primary">dns</span> Computer Engineering
+                                </div>
+                                <p class="text-slate-600 dark:text-gray-400 leading-relaxed text-sm">Dedicated servers for Cloud Computing experiments, AI/Machine Learning clusters, and Cybersecurity sandboxes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openDigiLabModal() {
+            const modal = document.getElementById('digilab-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDigiLabModal() {
+            const modal = document.getElementById('digilab-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+
+</html>
